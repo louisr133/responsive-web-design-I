@@ -153,6 +153,12 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+
+@media (max-width: 500px){
+    .container{
+        width: 95%;
+    }
+}
 /* header */
 
 header .nav_container {
@@ -161,13 +167,13 @@ header .nav_container {
 
 header nav {
   display: flex;
+  justify-content: space-evenly;
   width: 690px;
   vertical-align: top;
   margin-top: 35px;
 }
 
 header nav a {
-  margin-right: 60px;
   font-size: 16px;
   color: gray;
   text-decoration: none;
@@ -186,8 +192,13 @@ header nav a:last-child {
 }
 
 header .logo {
-  /* display: inline-flex; */
   margin-top: 25px;
+}
+
+@media(max-width:500px) {
+    .logo {
+        margin-bottom: -15px;
+    }
 }
 
 @media(max-width: 800px){
@@ -196,10 +207,29 @@ header .logo {
         justify-content: space-evenly
     }
 
-    header nav{
-        justify-content: space-evenly
-    }
+}
 
+@media(max-width: 500px){
+    header nav {
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 500px){
+    header nav a {
+        padding: 20px;
+        border-bottom: 1px solid;
+        width: 500px;
+        font-size: 20px;
+        
+    }
+    .first {
+        border-top: 1px solid;
+    }
+    header nav a:hover{
+        text-decoration: none;
+    }
 }
 
 /* cta */
@@ -211,6 +241,8 @@ header .logo {
 @media (max-width: 800px){
     .cta {
         margin-bottom: -30px;
+        display: flex;
+        justify-content: space-around;
     }
 }
 
@@ -229,8 +261,8 @@ header .logo {
 @media (max-width: 800px){
     .cta .cta-text {
         padding: 0 0;
-        margin-top: 75px;
-        margin-left: 25%;
+        margin-left: 0;
+        margin-top: 50px;
     }
 }
 
@@ -270,6 +302,21 @@ header .logo {
   display: inline-flex;
 }
 
+@media(max-width: 500px) {
+    .top-content{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 500px) {
+    .top-content .text-content{
+        margin-top: 32px;
+        margin-bottom: 17px;
+    }
+    
+}
+
+
 .main-content .top-content .text-content {
   width: auto;
   margin-right: 34px;
@@ -308,6 +355,21 @@ header .logo {
   margin-right: 0;
 }
 
+@media(max-width: 500px) {
+    .bottom-content{
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width: 500px) {
+    .bottom-content .text-content{
+        margin-top: 0px;
+        margin-bottom: 65px;
+    }
+    
+}
+
 .contact {
   border-top: 1px solid black;
   padding: 30px 0px;
@@ -319,6 +381,13 @@ header .logo {
 @media (max-width: 800px){
     .contact{
         margin-top: 70px;
+    
+    }
+}
+
+@media (max-width: 500px){
+    .contact{
+        margin-top: -65px;
     
     }
 }
