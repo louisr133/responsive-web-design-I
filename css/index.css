@@ -137,8 +137,7 @@ h1, h2, h3, h4, h5 {
 
 
 
-
-
+/* starting css on index.html */
 
 
 
@@ -168,7 +167,6 @@ header nav {
 }
 
 header nav a {
-  display: flex;
   margin-right: 60px;
   font-size: 16px;
   color: gray;
@@ -198,6 +196,10 @@ header .logo {
         justify-content: space-evenly
     }
 
+    header nav{
+        justify-content: space-evenly
+    }
+
 }
 
 /* cta */
@@ -206,8 +208,11 @@ header .logo {
     margin-bottom: 70px;
 }
 
-
-
+@media (max-width: 800px){
+    .cta {
+        margin-bottom: -30px;
+    }
+}
 
 .cta .cta-text {
 
@@ -224,6 +229,7 @@ header .logo {
 @media (max-width: 800px){
     .cta .cta-text {
         padding: 0 0;
+        margin-top: 75px;
         margin-left: 25%;
     }
 }
@@ -309,6 +315,12 @@ header .logo {
 
 .contact p {
   margin: 15px 0;
+}
+@media (max-width: 800px){
+    .contact{
+        margin-top: 70px;
+    
+    }
 }
 
 footer {
